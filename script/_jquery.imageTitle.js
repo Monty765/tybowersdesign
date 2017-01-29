@@ -1,7 +1,6 @@
 $.fn.imageTitle = function (option) {
 	
 	var defaults={
-		 //type:captionfull(全部显示或者消失),caption(显示标题),slideright(向右滑动),thecombo（向左下角滑动）,slidedown（向下滑动）
 		 type:"captionfull",	
 		 height:"rightArrow",	
 		 width:"firstMenu",	
@@ -25,8 +24,8 @@ $.fn.imageTitle = function (option) {
 			outObj={top:'160px'};
 			$(obj).find(".cover").stop().animate(outObj,{duration:160});											
 		}else if(defaults.type=="caption"){
-			overObj={top:'180px'};
-			outObj={top:'225px'};
+			overObj={top:'86%'};
+			outObj={top:'93%'};
 			$(obj).find(".cover").stop().animate(outObj,{duration:160});											
 		}else if(defaults.type=="slideright"){
 			overObj={left:'325px'};
