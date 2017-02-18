@@ -1,0 +1,124 @@
+@font-face {
+      src: url("../Akkurat Regular.otf") format("opentype");
+      font-family: Akkurat Regular;
+
+    }
+    body {
+      padding-top: 105px;
+      overflow-x: hidden;
+    }
+    @media only screen and (max-width: 1200px)  {
+      body {
+        padding-top: 205px;
+      }
+    }
+    @media only screen and (min-width: 700px)  {
+      .caption {
+        height: 220px;
+      }
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait)  {
+        .caption {
+          height: 100px;
+        }
+      }
+      @media only screen and (min-width: 800px)  {
+        .caption {
+          height: 420px;
+
+        }
+      }
+      .clientimg{
+        padding-top: 8px;
+        padding-bottom: 28px;
+        padding-left: 0px; 
+        padding-right: 0px;
+
+
+      }
+
+
+      .navbar-default {
+        background-color: #ffffff; 
+        border-color: #ffffff; 
+      }
+      .lmenu{
+        padding-left:100px;
+        color:#EF4423;
+
+      }
+      #slider {
+        position: relative;
+        overflow: visible;
+        margin: 20px auto 0 auto;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #slider ul {
+       overflow: visible;
+       position: relative;
+       margin: 0;
+       padding: 0;
+
+       height: 630px;
+       list-style: none;
+     }
+
+     #slider ul li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 1000px;
+      height: 630px;
+      text-align: center;
+      line-height: 300px;
+    }
+
+    a.control_prev, a.control_next {
+      position: absolute;  
+      z-index: 999;
+      display: block;
+      padding: 10px 20px;
+      width: auto;
+      height: auto;
+      background: #EF4423;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+    a.control_prev{
+      top: 57%;
+    }
+    a.control_next {
+      top:50%;
+    }
+    a.control_prev:hover, a.control_next:hover {
+      opacity: 1;
+      /*-webkit-transition: all 0.2s ease;*/
+    }
+
+    a.control_prev {
+      right: 0;
+      border-radius: 0 2px 2px 0;
+    }
+
+    a.control_next {
+      right: 0;
+      border-radius: 2px 0 0 2px;
+    }
+
+    .slider_option {
+      position: relative;
+      margin: 10px auto;
+      width: 160px;
+      font-size: 18px;
+    }

@@ -1,372 +1,386 @@
 <html>
 <head>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-<style type="text/css">
-
-
-  @font-face {
-    src: url("Akkurat Regular.otf") format("opentype");
-font-family: Akkurat Regular;
-
-}
-body {
-    padding-top: 105px;
-  }
-@media only screen and (max-width: 1200px)  {
-body {
-    padding-top: 205px;
-  }
-}
-@media only screen and (min-width: 700px)  {
-.caption {
-  height: 220px;
- }
- @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait)  {
-.caption {
-  height: 100px;
- }
-  }
-@media only screen and (min-width: 800px)  {
-.caption {
-  height: 420px;
-
- }
-  }
-.clientimg{
-  padding-top: 8px;
-  padding-bottom: 28px;
-  padding-left: 0px; 
-  padding-right: 0px;
-   
-  
-}
-
-.caption {
-  position: relative;
-  padding-right:4px;
-  padding-left: 4px;
- cursor:pointer;
-  margin: 0px;
-  font-family:Akkurat Regular;
-  overflow: hidden;
-}
-
-.caption img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.boxcaption {
-  float: left;
-  position: absolute;
-  background:#F0F3F4;
-  height: 100px;
-  width: 100%;
-  opacity: 0.8;
-  /* For IE 5-7 */
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  /* For IE 8 */
-  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-}
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <style type="text/css">
 
 
+    @font-face {
+      src: url("Akkurat Regular.otf") format("opentype");
+      font-family: Akkurat Regular;
 
-.caption .boxcaption {
-  top:90%;
-  left: 0;
-}
+    }
+    body {
+      padding-top: 105px;
+    }
+    @media only screen and (max-width: 1200px)  {
+      body {
+        padding-top: 205px;
+      }
+    }
+    @media only screen and (min-width: 700px)  {
+      .caption {
+        height: 220px;
+      }
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait)  {
+        .caption {
+          height: 100px;
+        }
+      }
+      @media only screen and (min-width: 800px)  {
+        .caption {
+          height: 420px;
 
-.boxgrid_title {
-  font-size: 14px;
-  font-weight: bold;
-  padding: 4px 5px 0 10px;
-  color: #17202A;
-}
-
-.boxgrid_con {
-  font-size: 12px;
-  padding: 4px 5px 0 10px;
-  color: #17202A;
-}
-
-.navbar-default {
-    background-color: #ffffff; 
-    border-color: #ffffff; 
-}
-.lmenu{
-  padding-left:100px;
-  color:#EF4423;
-
-}
-.content {
-    display: none;
-   
-}
-</style>
-</head>
-<body style="font-family:Akkurat Regular;" onscroll="myFunction()">
+        }
+      }
+      .clientimg{
+        padding-top: 8px;
+        padding-bottom: 28px;
+        padding-left: 0px; 
+        padding-right: 0px;
 
 
-	<div class="container-fluid">
-      
-<br/>
-      <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
+      }
+
+      .caption {
+        position: relative;
+        padding-right:4px;
+        padding-left: 4px;
+        cursor:pointer;
+        margin: 0px;
+        font-family:Akkurat Regular;
+        overflow: hidden;
+      }
+
+      .caption img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .boxcaption {
+        float: left;
+        position: absolute;
+        background:#F0F3F4;
+        height: 100px;
+        width: 100%;
+        opacity: 0.8;
+        /* For IE 5-7 */
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        /* For IE 8 */
+        -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      }
+
+
+
+      .caption .boxcaption {
+        top:90%;
+        left: 0;
+      }
+
+      .boxgrid_title {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 4px 5px 0 10px;
+        color: #17202A;
+      }
+
+      .boxgrid_con {
+        font-size: 12px;
+        padding: 4px 5px 0 10px;
+        color: #17202A;
+      }
+
+      .navbar-default {
+        background-color: #ffffff; 
+        border-color: #ffffff; 
+      }
+      .lmenu{
+        padding-left:100px;
+        color:#EF4423;
+
+      }
+      .content {
+        display: none;
+
+      }
+    </style>
+  </head>
+  <body style="font-family:Akkurat Regular;">
+
+
+   <div class="container-fluid">
+
+    <br/>
+    <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
       <div class="container-fluid">
-      <div class="col-lg-8 col-md-6">
-      <div style="min-height:85px;margin-top:8px;">
-      <img src="img/smalllogoo.png" id="smallLogo" style="display:none;height:85px;">
-      <img src="img/mainlogoo.png" id="mainLogo" style="height:85px;"/><br/>
-     </div>
-      <div class="heading" style="padding-left:25%;cursor:pointer;">
-      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>&nbsp;<span style="color:#666;margin-bottom:4px;">All Industries</span>
-      </div>
-      
+        <div class="col-lg-8 col-md-6">
+          <div style="min-height:85px;margin-top:8px;">
+            <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;">
+            <img src="img/tybb.png" id="mainLogo" style="height:85px;"/><br/>
+          </div>
+          <div class="heading" style="padding-left:25%;cursor:pointer;">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>&nbsp;<span style="color:#666;margin-bottom:4px;">All Industries</span>
+          </div>
 
-<div id="occ" class="pad" style="display:none;padding-left:20%;"><br/>
-<table style="color:EF4423"><tr><td>
-<ul style="list-style:none;">
-  <li>Agriculture</li>
-        <li>Art</li>
-        <li>Associations</li>
-         <li>Beauty</li>
-        </ul>
-</td><td>
-<ul style="list-style:none;padding-left:20px;">
-  <li>Childrens</li>
-        <li>Cities</li>
-        <li>Corporations</li>
-         <li>Educations</li>
-        
-        </ul>
-</td>
-<td>
-<ul style="list-style:none;padding-left:20px;">
-  <li>Energy</li>
-        <li>Fashion</li>
-        <li>Music</li>
-         <li>Technology</li>
-        
-        </ul>
-</td></tr></table><br/>
+
+          <div id="occ" class="pad" style="display:none;padding-left:20%;"><br/>
+            <table style="color:EF4423"><tr><td>
+              <ul style="list-style:none;">
+                <li>Agriculture</li>
+                <li>Art</li>
+                <li>Associations</li>
+                <li>Beauty</li>
+              </ul>
+            </td><td>
+            <ul style="list-style:none;padding-left:20px;">
+              <li>Childrens</li>
+              <li>Cities</li>
+              <li>Corporations</li>
+              <li>Educations</li>
+
+            </ul>
+          </td>
+          <td>
+            <ul style="list-style:none;padding-left:20px;">
+              <li>Energy</li>
+              <li>Fashion</li>
+              <li>Music</li>
+              <li>Technology</li>
+
+            </ul>
+          </td></tr></table><br/>
         </div>
       </div>
       
       <div class="col-lg-4 col-md-8"><br/>
-      <div class="lmenu">
-      <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
-        <li style="cursor:pointer;">Work</li>
-        <li style="cursor:pointer;">About</li>
-        <li style="cursor:pointer;">Contact</li>
-      </ul>
-      </div> <!--end of flot -->
+        <div class="lmenu">
+          <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
+            <li style="cursor:pointer;">Work</li>
+            <li style="cursor:pointer;">About</li>
+            <li style="cursor:pointer;">Contact</li>
+          </ul>
+        </div> <!--end of flot -->
       </div>
-      </div>
-      </div> 
-      
-      <div class="row">
-      <div class="container-fluid" >
+    </div>
+  </div> 
+
+  <div class="row">
+    <div class="container-fluid" >
       <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
 
        <div class="caption">
-          <img src="img/sample/1.jpg" class="clientimg">
-          <div class="cover boxcaption">
+       <a href="../dev-tyb/work/FLI.html">
+        <img src="img/sample/1.jpg" class="clientimg">
+        <div class="cover boxcaption">
           <div class="boxgrid_title">FLI- Cannabis-Infused Health & Well-being<br/></div>
           <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
+        </div>  
+        </a>  
       </div>
     </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/2.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Mijas - Home-Made Hatch Green Chile Salsa<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
+    <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+     <div class="caption">
+      <img src="img/sample/2.jpg" class="clientimg">
+      <div class="cover boxcaption">
+        <div class="boxgrid_title">Mijas - Home-Made Hatch Green Chile Salsa<br/></div>
+        <div class="boxgrid_con">More details<br>More details</div>
+      </div>    
     </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption" >
-          <img src="img/sample/3.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Griddy- The Future of Energy<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/4.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Buscemi - Luxury-Sneakers<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-    </div><!--End of continer -->
-      </div><!--End of row 1 -->
+  </div>
+  <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+   <div class="caption" >
+    <img src="img/sample/3.jpg" class="clientimg">
+    <div class="cover boxcaption">
+      <div class="boxgrid_title">Griddy- The Future of Energy<br/></div>
+      <div class="boxgrid_con">More details<br>More details</div>
+    </div>    
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+ <div class="caption">
+  <img src="img/sample/4.jpg" class="clientimg">
+  <div class="cover boxcaption">
+    <div class="boxgrid_title">Buscemi - Luxury-Sneakers<br/></div>
+    <div class="boxgrid_con">More details<br>More details</div>
+  </div>    
+</div>
+</div>
+</div><!--End of continer -->
+</div><!--End of row 1 -->
 <div class="row">
-      <div class="container-fluid" >
-      <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+  <div class="container-fluid" >
+    <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
 
-       <div class="caption">
-          <img src="img/sample/5.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Mr Mumble - Men's Grooming Products<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
+     <div class="caption">
+      <img src="img/sample/5.jpg" class="clientimg">
+      <div class="cover boxcaption">
+        <div class="boxgrid_title">Mr Mumble - Men's Grooming Products<br/></div>
+        <div class="boxgrid_con">More details<br>More details</div>
+      </div>    
     </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/6.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Valor & Stout - Ready-Mixed Coocktails<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption" >
-          <img src="img/sample/7.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Trunk Ltd - Luxury Casual Clothing<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/8.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Rodeo Cold - Western Crafted Beer & Ale<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-    </div><!--End of continer -->
-      </div><!--End of row 1 -->
-      <div class="row">
-      <div class="container-fluid" >
-      <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+  </div>
+  <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+   <div class="caption">
+    <img src="img/sample/6.jpg" class="clientimg">
+    <div class="cover boxcaption">
+      <div class="boxgrid_title">Valor & Stout - Ready-Mixed Coocktails<br/></div>
+      <div class="boxgrid_con">More details<br>More details</div>
+    </div>    
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+ <div class="caption" >
+  <img src="img/sample/7.jpg" class="clientimg">
+  <div class="cover boxcaption">
+    <div class="boxgrid_title">Trunk Ltd - Luxury Casual Clothing<br/></div>
+    <div class="boxgrid_con">More details<br>More details</div>
+  </div>    
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+ <div class="caption">
+  <img src="img/sample/8.jpg" class="clientimg">
+  <div class="cover boxcaption">
+    <div class="boxgrid_title">Rodeo Cold - Western Crafted Beer & Ale<br/></div>
+    <div class="boxgrid_con">More details<br>More details</div>
+  </div>    
+</div>
+</div>
+</div><!--End of continer -->
+</div><!--End of row 1 -->
+<div class="row">
+  <div class="container-fluid" >
+    <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
 
-       <div class="caption">
-          <img src="img/sample/1.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">'Saturday Night Live 40th Edition'<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
+     <div class="caption">
+      <img src="img/sample/1.jpg" class="clientimg">
+      <div class="cover boxcaption">
+        <div class="boxgrid_title">'Saturday Night Live 40th Edition'<br/></div>
+        <div class="boxgrid_con">More details<br>More details</div>
+      </div>    
     </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/2.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">'Exhibition Rolling Stone'<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption" >
-          <img src="img/sample/3.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">'Fantastic Beasts and where to find them'<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-       <div class="caption">
-          <img src="img/sample/4.jpg" class="clientimg">
-          <div class="cover boxcaption">
-          <div class="boxgrid_title">Closed Words<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-          </div>    
-      </div>
-    </div>
-    </div><!--End of continer -->
-      </div><!--End of row 1 -->
-      </div>
-      
-    </div>
-    
-      </div>
-      <!-- Site footer -->
-      <br/>
-      <footer class="footer" style="color:#EF4423;">
-      <center>
-      <p>&copy; 2016 TY BOWERS DESIGN.</p>
-      </center>
-      </footer>
+  </div>
+  <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+   <div class="caption">
+    <img src="img/sample/2.jpg" class="clientimg">
+    <div class="cover boxcaption">
+      <div class="boxgrid_title">'Exhibition Rolling Stone'<br/></div>
+      <div class="boxgrid_con">More details<br>More details</div>
+    </div>    
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+ <div class="caption" >
+  <img src="img/sample/3.jpg" class="clientimg">
+  <div class="cover boxcaption">
+    <div class="boxgrid_title">'Fantastic Beasts and where to find them'<br/></div>
+    <div class="boxgrid_con">More details<br>More details</div>
+  </div>    
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
+ <div class="caption">
+  <img src="img/sample/4.jpg" class="clientimg">
+  <div class="cover boxcaption">
+    <div class="boxgrid_title">Closed Words<br/></div>
+    <div class="boxgrid_con">More details<br>More details</div>
+  </div>    
+</div>
+</div>
+</div><!--End of continer -->
+</div><!--End of row 1 -->
+</div>
+
+</div>
+
+</div>
+<!-- Site footer -->
+<br/>
+<footer class="footer" style="color:#EF4423;">
+  <center>
+    <p>&copy; 2016 TY BOWERS DESIGN.</p>
+  </center>
+</footer>
 <br/> 
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 </center>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
-  <script type="text/javascript">
- 
+<script type="text/javascript">
 
-    $(".caption").imageTitle({
-      type:"caption"
-    });
 
-var x = 0;
-function myFunction() {
-    
-}
-function init() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 130,
-            header = document.querySelector("header");
-        if (distanceY > shrinkOn) {
-           $("#mainLogo").hide(350);
-           $("#smallLogo").show("slow");
-           $('.pad').hide(400);
-        } else {
-            if ($("#mainLogo").hide()) {
-               $("#smallLogo").hide();
-                $("#mainLogo").show();
-            }
-        }
-    });
+  $(".caption").imageTitle({
+    type:"caption"
+  });
+
+  var x = 0;
+  // function myFunction() {
+  //   var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  //   console.log(distanceY);
+  //   shrinkOn = 125,
+  //   header = document.querySelector("header");
+  //   if ((distanceY == shrinkOn)||(distanceY > shrinkOn)) {
+  //    $("#mainLogo").hide(350);
+  //    $("#smallLogo").show("slow");
+  //    $('.pad').hide(400);
+  //  } else {
+  //    $("#smallLogo").hide();
+  //    $("#mainLogo").show();
+  //  }
+ //}
+ function init() {
+
+  window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+    shrinkOn = 113,
+    header = document.querySelector("header");
+    if ((distanceY > shrinkOn)) {
+     $("#mainLogo").hide(450);
+     
+   } else {
+     $("#mainLogo").show(450);
+   }
+   if ((distanceY > 1)) {
+    $('.pad').hide(400);
+   }
+ });
 }
 window.onload = init();
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
     $('.pad').hide();
     $('.heading').click(function () {
-        $(this).next('.pad').slideToggle();
-        if($(this).find('.span1').attr('id') == 'yes') {
-            $(this).find('.span1').attr('id', '').html('&#8744;');
-        } else {
-            $(this).find('.span1').attr('id', 'yes').html('&#8743;');
-        }
+      $(this).next('.pad').slideToggle();
+      if($(this).find('.span1').attr('id') == 'yes') {
+        $(this).find('.span1').attr('id', '').html('&#8744;');
+      } else {
+        $(this).find('.span1').attr('id', 'yes').html('&#8743;');
+      }
     });
-});
-  </script>     
+  });
+</script>     
 </body>
 </html>
 
