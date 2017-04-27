@@ -31,15 +31,15 @@
     }
     @media only screen and (min-width: 700px)  {
       .caption {
-        height: 220px;
+        height: 100%;
       }
-      @media only screen 
-      and (min-device-width: 320px) 
+      @media only screen
+      and (min-device-width: 320px)
       and (max-device-width: 568px)
       and (-webkit-min-device-pixel-ratio: 2)
       and (orientation: portrait)  {
         .caption {
-          height: 100px;
+          height: 100%;
         }
       }
       @media only screen and (min-width: 800px)  {
@@ -51,7 +51,7 @@
       .clientimg{
         padding-top: 8px;
         padding-bottom: 28px;
-        padding-left: 0px; 
+        padding-left: 0px;
         padding-right: 0px;
 
 
@@ -110,8 +110,8 @@
       }
 
       .navbar-default {
-        background-color: #ffffff; 
-        border-color: #ffffff; 
+        background-color: #ffffff;
+        border-color: #ffffff;
       }
       .lmenu{
         padding-left:100px;
@@ -122,6 +122,9 @@
         display: none;
 
       }
+      .container-fluid{
+        height:;
+      }
     </style>
   </head>
   <body style="font-family:Akkurat Regular;">
@@ -130,48 +133,16 @@
    <div class="container-fluid">
 
     <br/>
-    <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
-      <div class="container-fluid">
+    <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff; border: 0px solid transparent;border-color:#fff;">
+      <div class="container-fluid" style="background-color:#fff;">
         <div class="col-lg-8 col-md-6">
         <a href="../index.html">
           <div style="min-height:85px;margin-top:8px;">
             <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="img/tybb.png" id="mainLogo" style="height:85px;"/><br/>
           </div>
           </a>
-          <div class="heading" style="padding-left:25%;cursor:pointer;">
-            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>&nbsp;<span style="color:#666;margin-bottom:4px;">All Industries</span>
-          </div>
-
-
-          <div id="occ" class="pad" style="display:none;padding-left:20%;"><br/>
-            <table style="color:#EF4423"><tr><td>
-              <ul style="list-style:none;">
-                <li>Agriculture</li>
-                <li>Art</li>
-                <li>Associations</li>
-                <li>Beauty</li>
-              </ul>
-            </td><td>
-            <ul style="list-style:none;padding-left:20px;">
-              <li>Childrens</li>
-              <li>Cities</li>
-              <li>Corporations</li>
-              <li>Educations</li>
-
-            </ul>
-          </td>
-          <td>
-            <ul style="list-style:none;padding-left:20px;">
-              <li>Energy</li>
-              <li>Fashion</li>
-              <li>Music</li>
-              <li>Technology</li>
-
-            </ul>
-          </td></tr></table><br/>
-        </div>
       </div>
-      
+
       <div class="col-lg-4 col-md-8"><br/>
         <div class="lmenu">
           <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
@@ -182,89 +153,32 @@
         </div> <!--end of flot -->
       </div>
     </div>
-  </div> 
-
-  <div class="row">
-    <div class="container-fluid" >
-      <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-
-       <div class="caption">
-       <a href="../work/FLI.html">
-        <img src="img/sample/1.jpg" class="clientimg">
-        <div class="cover boxcaption">
-          <div class="boxgrid_title">FLI- Cannabis-Infused Health & Well-being<br/></div>
-          <div class="boxgrid_con">More details<br>More details</div>
-        </div>  
-        </a>  
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-     <div class="caption">
-      <img src="img/sample/2.jpg" class="clientimg">
-      <div class="cover boxcaption">
-        <div class="boxgrid_title">Mijas - Home-Made Hatch Green Chile Salsa<br/></div>
-        <div class="boxgrid_con">More details<br>More details</div>
-      </div>    
-    </div>
   </div>
-  <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-   <div class="caption" >
-    <img src="img/sample/3.jpg" class="clientimg">
-    <div class="cover boxcaption">
-      <div class="boxgrid_title">Griddy- The Future of Energy<br/></div>
-      <div class="boxgrid_con">More details<br>More details</div>
-    </div>    
-  </div>
-</div>
-<div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
- <div class="caption">
-  <img src="img/sample/4.jpg" class="clientimg">
-  <div class="cover boxcaption">
-    <div class="boxgrid_title">Buscemi - Luxury-Sneakers<br/></div>
-    <div class="boxgrid_con">More details<br>More details</div>
-  </div>    
-</div>
-</div>
-</div><!--End of continer -->
-</div><!--End of row 1 -->
 <div class="row">
   <div class="container-fluid" >
     <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
-
      <div class="caption">
       <img src="img/sample/5.jpg" class="clientimg">
-      <div class="cover boxcaption">
-        <div class="boxgrid_title">Mr Mumble - Men's Grooming Products<br/></div>
-        <div class="boxgrid_con">More details<br>More details</div>
-      </div>    
     </div>
+    <div>More details More details</div>
   </div>
   <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
    <div class="caption">
     <img src="img/sample/6.jpg" class="clientimg">
-    <div class="cover boxcaption">
-      <div class="boxgrid_title">Valor & Stout - Ready-Mixed Coocktails<br/></div>
-      <div class="boxgrid_con">More details<br>More details</div>
-    </div>    
   </div>
+  <div>More details More details</div>
 </div>
 <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
  <div class="caption" >
   <img src="img/sample/7.jpg" class="clientimg">
-  <div class="cover boxcaption">
-    <div class="boxgrid_title">Trunk Ltd - Luxury Casual Clothing<br/></div>
-    <div class="boxgrid_con">More details<br>More details</div>
-  </div>    
 </div>
+<div>More details More details</div>
 </div>
 <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
  <div class="caption">
   <img src="img/sample/8.jpg" class="clientimg">
-  <div class="cover boxcaption">
-    <div class="boxgrid_title">Rodeo Cold - Western Crafted Beer & Ale<br/></div>
-    <div class="boxgrid_con">More details<br>More details</div>
-  </div>    
 </div>
+<div>More details More details</div>
 </div>
 </div><!--End of continer -->
 </div><!--End of row 1 -->
@@ -277,7 +191,7 @@
       <div class="cover boxcaption">
         <div class="boxgrid_title">'Saturday Night Live 40th Edition'<br/></div>
         <div class="boxgrid_con">More details<br>More details</div>
-      </div>    
+      </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
@@ -286,7 +200,7 @@
     <div class="cover boxcaption">
       <div class="boxgrid_title">'Exhibition Rolling Stone'<br/></div>
       <div class="boxgrid_con">More details<br>More details</div>
-    </div>    
+    </div>
   </div>
 </div>
 <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
@@ -295,7 +209,7 @@
   <div class="cover boxcaption">
     <div class="boxgrid_title">'Fantastic Beasts and where to find them'<br/></div>
     <div class="boxgrid_con">More details<br>More details</div>
-  </div>    
+  </div>
 </div>
 </div>
 <div class="col-lg-3 col-md-3 col-xs-6 thumb" style="padding-left:3px; padding-right:3px;">
@@ -304,7 +218,7 @@
   <div class="cover boxcaption">
     <div class="boxgrid_title">Closed Words<br/></div>
     <div class="boxgrid_con">More details<br>More details</div>
-  </div>    
+  </div>
 </div>
 </div>
 </div><!--End of continer -->
@@ -321,7 +235,7 @@
     <p>&copy; 2016 TY BOWERS DESIGN.</p>
   </center>
 </footer>
-<br/> 
+<br/>
 </div> <!-- /container -->
 
 </center>
@@ -357,7 +271,7 @@
     header = document.querySelector("header");
     if ((distanceY > shrinkOn)) {
      $("#mainLogo").hide(450);
-     
+
    } else {
      $("#mainLogo").show(450);
    }
@@ -381,7 +295,6 @@ window.onload = init();
       }
     });
   });
-</script>     
+</script>
 </body>
 </html>
-
