@@ -46,7 +46,25 @@ jQuery(document).ready(function ($) {
   // });
 
 });
+var $slider=$('#slider');
+  var $slides=$slider.find('#slides');
+  var $slide=$slides.find('.slide');
+  var currentslide=1;
+  $('.control_next').click(function(){
+    if(currentslide <= ($( ".slide" ).size()-1)){
+      currentslide++;
+    $('#slider .slides').animate({'margin-left':'-=720px'},1000);
+   }
+  else{
 
+  }
+  });
+  $('.control_prev').click(function(){
+    if(currentslide>1){
+      currentslide--;
+    $('#slider .slides').animate({'margin-left':'+=720px'},1000);
+  }
+  });
 $(".caption").imageTitle({
   type:"caption"
 });

@@ -32,18 +32,21 @@
 
         }
       }
+      
+      
       .clientimg{
         padding-top: 8px;
         padding-bottom: 28px;
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
-        max-width:100%
+        max-width:100%;
         height: 100%;
       }
       .navbar-default {
         background-color: #ffffff;
         border-color: #ffffff;
+        box-shadow:none;
       }
       .lmenu{
         padding-left:100px;
@@ -52,7 +55,7 @@
       }
       #slider{
         width: 100%;
-        height: 450px;
+        height: 80%;
         overflow-x: hidden;
         overflow-y: hidden;
       }
@@ -66,8 +69,9 @@
       #slider .slide{
         float: left;
         list-style-type: none;
-        width: 720px;
-        height: 450px;
+        padding-right: 15px;
+        /*width: 720px;
+        height: 450px;*/
       }
 
 
@@ -97,6 +101,7 @@
       font-size: 18px;
       opacity: 0.8;
       cursor: pointer;
+      border-radius: 15px;
     }
     .workheading{
       color:#EF4423;
@@ -136,9 +141,10 @@
      width: 100%;
      top:8%;
     }
+    .mover:hover{
+      color: #fff;
+    }
     .footerbar{
-
-
    clear: both;
   background: #EF4423;
   color: White;
@@ -158,5 +164,8 @@
       padding-top:7px;
     }
     .footer{
-      color:#EF4423;
+      color:#6F6F6F;
+      padding-left: 30px;
+      font-family:Akkurat Regular;
+      
     }
