@@ -1,249 +1,229 @@
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-<link rel="stylesheet" href="css/tyb.css">
-  <style type="text/css">
-
-
-    @font-face {
-      src: url("Akkurat Regular.otf") format("opentype");
-      font-family: Akkurat Regular;
-
-    }
-    body {
-      padding-top: 105px;
-    }
-    @media only screen and (max-width: 1200px)  {
-      body {
-        padding-top: 205px;
-      }
-    }
-    @media only screen and (min-width: 700px)  {
-      .caption {
-        height: 100%;
-      }
-      @media only screen
-      and (min-device-width: 320px)
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait)  {
-        .caption {
-          height: 100%;
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/tyb.css">
+    <style type="text/css">
+            @font-face {
+            src: url("Akkurat Regular.otf") format("opentype");
+            font-family: Akkurat Regular;
         }
-      }
-      @media only screen and (min-width: 800px)  {
-        .caption {
-          height: 420px;
-
+        
+        body {
+            padding-top: 105px;
         }
-      }
-      .clientimg{
-        padding-top: 8px;
-        padding-bottom: 28px;
-        padding-left: 0px;
-        padding-right: 0px;
-
-
-      }
-
-      .caption {
-        position: relative;
-        padding-right:4px;
-        padding-left: 4px;
-        cursor:pointer;
-        margin: 0px;
-        font-family:Akkurat Regular;
-        overflow: hidden;
-      }
-
-      .caption img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .boxcaption {
-        float: left;
-        position: absolute;
-        background:#F0F3F4;
-        height: 100px;
-        width: 100%;
-        opacity: 0.8;
-        /* For IE 5-7 */
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-        /* For IE 8 */
-        -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      }
-
-
-
-      .caption .boxcaption {
-        top:90%;
-        left: 0;
-      }
-
-      .boxgrid_title {
-        font-size: 14px;
-        font-weight: bold;
-        padding: 4px 5px 0 10px;
-        color: #17202A;
-      }
-
-      .boxgrid_con {
-        font-size: 12px;
-        padding: 4px 5px 0 10px;
-        color: #17202A;
-      }
-
-      .navbar-default {
-        background-color: #ffffff;
-        border-color: #ffffff;
-      }
-      .lmenu{
-        padding-left:100px;
-        color:#EF4423;
-
-      }
-      .content {
-        display: none;
-
-      }
-      
+        
+        @media only screen and (max-width: 1200px) {
+            body {
+                padding-top: 205px;
+            }
+        }
+        
+        @media only screen and (min-width: 700px) {
+            .caption {
+                height: 100%;
+            }
+            @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+                .caption {
+                    height: 100%;
+                }
+            }
+            @media only screen and (min-width: 800px) {
+                .caption {
+                    height: 420px;
+                }
+            }
+            .clientimg {
+                padding-top: 8px;
+                padding-bottom: 28px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .caption {
+                position: relative;
+                padding-right: 4px;
+                padding-left: 4px;
+                cursor: pointer;
+                margin: 0px;
+                font-family: Akkurat Regular;
+                overflow: hidden;
+            }
+            .caption img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .boxcaption {
+                float: left;
+                position: absolute;
+                background: #F0F3F4;
+                height: 100px;
+                width: 100%;
+                opacity: 0.8;
+                /* For IE 5-7 */
+                filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+                /* For IE 8 */
+                -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+            }
+            .caption .boxcaption {
+                top: 90%;
+                left: 0;
+            }
+            .boxgrid_title {
+                font-size: 14px;
+                font-weight: bold;
+                padding: 4px 5px 0 10px;
+                color: #17202A;
+            }
+            .boxgrid_con {
+                font-size: 12px;
+                padding: 4px 5px 0 10px;
+                color: #17202A;
+            }
+            .navbar-default {
+                background-color: #ffffff;
+                border-color: #ffffff;
+            }
+            .lmenu {
+                padding-left: 100px;
+                color: #EF4423;
+            }
+            .content {
+                display: none;
+            }
     </style>
-  </head>
-  <body style="font-family:Akkurat Regular;">
-   <div class="container-fluid">
-    <br/>
-    <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
-    <div class="container-fluid" style="background-color:#fff;">
-      <div class="col-lg-8 col-md-6">
-        
-          <div style="min-height:85px;margin-top:8px;">
-          <a href="../">
-            <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="img/tybb.png" id="mainLogo" style="height:85px;"/><br/>
-          </a>
-          </div>
-        
+</head>
+
+<body style="font-family:Akkurat Regular;">
+    <div class="container-fluid">
+        <br/>
+        <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
+            <div class="container-fluid" style="background-color:#fff;">
+                <div class="col-lg-8 col-md-6">
+
+                    <div style="min-height:85px;margin-top:8px;">
+                        <a href="../">
+                            <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="img/tybb.png" id="mainLogo" style="height:85px;" /><br/>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-8"><br/>
+                    <div class="lmenu">
+                        <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
+                            <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
+                            <li style="cursor:pointer;"><a href="about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
+                            <li style="cursor:pointer;"><a href="contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!--end of flot -->
+                </div>
+                <div class="col-lg-12 col-md-12 ">
+                    <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-bottom:5px;"></span></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="container-fluid">
+                <div style="width:60%;margin:0 auto;">
+
+                    <p>
+                        <h2 class="workheading">ABOUT</h2><br/>
+                        <p class="lead" style="font-size:21px;font-family:Akkurat Regular;color:#6E6E6E;">
+                            Ty Bowers Design is a multi-disciplined, independent design and branding concern located in <br/> Los Angeles. TBD delivers creative and innovative solutions to communication projects across brand <br/> identity, print, packaging,
+                            environmental, consumer product and digital design platforms. </p>
+                        <p class="lead" style="font-size:21px;font-family:Akkurat Regular;color:#6E6E6E;">For over 20 years, Ty Bowers has reinvigorated well known brands and established new ones.<br/> Working as a virtual extension of his client's organizations, he collaborates to create the strategies,<br/> products and environments
+                            that surround brands and give them life. <br/></p>
+                </div>
+            </div>
+        </div>
+        <!-- Site footer -->
+        <br/>
+
+
+        <footer class="footer" style="margin-top:28%">
+            &copy; 2017 T/B/D Ty Bowers Design.<br/>
+        </footer>
     </div>
-    <div class="col-lg-4 col-md-8"><br/>
-      <div class="lmenu">
-        <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
-            <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
-            <li style="cursor:pointer;"><a href="about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
-            <li style="cursor:pointer;"><a href="contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
-          </ul>
-      </div> <!--end of flot -->
-    </div>
-    <div class="col-lg-12 col-md-12 " >
-      <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-bottom:5px;"></span></a>
-      </div>
-  </div>
-  
-</div>
-<div class="row">
+    <!-- /container -->
+    <div class="col-sm-12 footerbar">
+        <div class="footerbar">
+        </div>
+        <!-- Site footer -->
 
-<div class="container-fluid">
-<div style="width:60%;margin:0 auto;">
+        </center>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
+        <script type="text/javascript">
+            $(".caption").imageTitle({
+                type: "caption"
+            });
 
-<p>
-<h2 class="workheading">ABOUT</h2><br/>
-Ty Bowers is a multi-disciplined, independent designer and brand mechanic delivering creative and innovative
-solutions to communication projects across brand identity, print, packaging, environmental, consumer product
-and digital design platforms.
-</p>
-<p>
-For over 20 years, Ty Bowers Design has reinvigorated well known brands and established new ones. Working as
-a virtual extension of our client's organization, we create the strategies, products and environments that surround
-brands and give them life.
-</p>
-</div>
-</div>
-</div>
-<!-- Site footer -->
-<br/>
+            var x = 0;
+            // function myFunction() {
+            //   var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            //   console.log(distanceY);
+            //   shrinkOn = 125,
+            //   header = document.querySelector("header");
+            //   if ((distanceY == shrinkOn)||(distanceY > shrinkOn)) {
+            //    $("#mainLogo").hide(350);
+            //    $("#smallLogo").show("slow");
+            //    $('.pad').hide(400);
+            //  } else {
+            //    $("#smallLogo").hide();
+            //    $("#mainLogo").show();
+            //  }
+            //}
+            function init() {
 
+                window.addEventListener('scroll', function(e) {
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+                    shrinkOn = 113,
+                        header = document.querySelector("header");
+                    if ((distanceY > shrinkOn)) {
+                        $("#mainLogo").hide(450);
 
-<footer class="footer"style="margin-top:28%">
-    &copy; 2017 T/B/D Ty Bowers Design.<br/>
-</footer>
-</div> <!-- /container -->
-<div class="col-sm-12 footerbar">
-<div class="footerbar">
-</div>
-<!-- Site footer -->
+                    } else {
+                        $("#mainLogo").show(450);
+                    }
+                    if ((distanceY > 1)) {
+                        $('.pad').hide(400);
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
 
-</center>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
-<script type="text/javascript">
-
-
-  $(".caption").imageTitle({
-    type:"caption"
-  });
-
-  var x = 0;
-  // function myFunction() {
-  //   var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-  //   console.log(distanceY);
-  //   shrinkOn = 125,
-  //   header = document.querySelector("header");
-  //   if ((distanceY == shrinkOn)||(distanceY > shrinkOn)) {
-  //    $("#mainLogo").hide(350);
-  //    $("#smallLogo").show("slow");
-  //    $('.pad').hide(400);
-  //  } else {
-  //    $("#smallLogo").hide();
-  //    $("#mainLogo").show();
-  //  }
- //}
- function init() {
-
-  window.addEventListener('scroll', function(e){
-    var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-    shrinkOn = 113,
-    header = document.querySelector("header");
-    if ((distanceY > shrinkOn)) {
-     $("#mainLogo").hide(450);
-
-   } else {
-     $("#mainLogo").show(450);
-   }
-   if ((distanceY > 1)) {
-    $('.pad').hide(400);
-   }
- });
-}
-window.onload = init();
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-
-    $('.pad').hide();
-    $('.heading').click(function () {
-      $(this).next('.pad').slideToggle();
-      if($(this).find('.span1').attr('id') == 'yes') {
-        $(this).find('.span1').attr('id', '').html('&#8744;');
-      } else {
-        $(this).find('.span1').attr('id', 'yes').html('&#8743;');
-      }
-    });
-  });
-</script>
+                $('.pad').hide();
+                $('.heading').click(function() {
+                    $(this).next('.pad').slideToggle();
+                    if ($(this).find('.span1').attr('id') == 'yes') {
+                        $(this).find('.span1').attr('id', '').html('&#8744;');
+                    } else {
+                        $(this).find('.span1').attr('id', 'yes').html('&#8743;');
+                    }
+                });
+            });
+        </script>
 </body>
+
 </html>
