@@ -1,186 +1,306 @@
-                                                                            @font-face {
-                                                                                src: url("../Akkurat Regular.otf") format("opentype");
-                                                                                font-family: Akkurat Regular;
-                                                                            }
-                                                                            
-                                                                            body {
-                                                                                padding-top: 105px;
-                                                                                overflow-x: hidden;
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 1200px) {
-                                                                                body {
-                                                                                    padding-top: 205px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (min-width: 700px) {
-                                                                                .caption {
-                                                                                    height: 100%;
-                                                                                }
-                                                                                @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-                                                                                    .caption {
-                                                                                        height: 100%;
-                                                                                    }
-                                                                                }
-                                                                                @media only screen and (min-width: 800px) {
-                                                                                    .caption {
-                                                                                        height: 100%;
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .clientimg {
-                                                                                padding-top: 8px;
-                                                                                padding-bottom: 28px;
-                                                                                padding-left: 0px;
-                                                                                padding-right: 0px;
-                                                                                width: 100%;
-                                                                                max-width: 100%;
-                                                                                height: 100%;
-                                                                            }
-                                                                            
-                                                                            .navbar-default {
-                                                                                background-color: #ffffff;
-                                                                                border-color: #ffffff;
-                                                                                box-shadow: none;
-                                                                            }
-                                                                            
-                                                                            .lmenu {
-                                                                                padding-left: 100px;
-                                                                                color: #EF4423;
-                                                                            }
-                                                                            
-                                                                            #slider {
-                                                                                width: 100%;
-                                                                                overflow-x: hidden;
-                                                                                overflow-y: hidden;
-                                                                            }
-                                                                            
-                                                                            #slider .slides {
-                                                                                display: block;
-                                                                                width: 6000px;
-                                                                                height: 300px;
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                            }
-                                                                            
-                                                                            #slider .slide {
-                                                                                float: left;
-                                                                                list-style-type: none;
-                                                                                padding-right: 21px;
-                                                                                padding-left: 20px;
-                                                                                /*width: 720px;
+                                                                           @font-face {
+                                                                               src: url("Akkurat Regular.otf") format("opentype");
+                                                                               font-family: Akkurat Regular;
+                                                                           }
+                                                                           
+                                                                           .navbar-fixed-top {
+                                                                               border: 0px;
+                                                                           }
+                                                                           
+                                                                           .navbar-default {
+                                                                               background-color: #ffffff;
+                                                                               border-color: #ffffff;
+                                                                               border: 0px;
+                                                                           }
+                                                                           
+                                                                           .lmenu {
+                                                                               padding-left: 100px;
+                                                                               color: #EF4423;
+                                                                           }
+                                                                           
+                                                                           .content {
+                                                                               display: none;
+                                                                           }
+                                                                           
+                                                                           .wrap {
+                                                                               overflow: hidden;
+                                                                               margin: 10px;
+                                                                           }
+                                                                           
+                                                                           .box {
+                                                                               float: left;
+                                                                               position: relative;
+                                                                               width: 25%;
+                                                                               padding-bottom: 20%;
+                                                                               margin-bottom: 18px;
+                                                                           }
+                                                                           
+                                                                           .boxInner {
+                                                                               position: absolute;
+                                                                               left: 10px;
+                                                                               right: 10px;
+                                                                               top: 10px;
+                                                                               bottom: 10px;
+                                                                               overflow: hidden;
+                                                                           }
+                                                                           
+                                                                           .boxInner img {
+                                                                               width: 100%;
+                                                                           }
+                                                                           
+                                                                           .boxInner .titleBox {
+                                                                               position: absolute;
+                                                                               bottom: 0;
+                                                                               left: 0;
+                                                                               right: 0;
+                                                                               /*margin-bottom: -50px;*/
+                                                                               /*background: #000;*/
+                                                                               background: #C9C5C4;
+                                                                               color: #000;
+                                                                               padding: 10px;
+                                                                               text-align: center;
+                                                                               -webkit-transition: all 0.3s ease-out;
+                                                                               -moz-transition: all 0.3s ease-out;
+                                                                               -o-transition: all 0.3s ease-out;
+                                                                               transition: all 0.3s ease-out;
+                                                                           }
+                                                                           
+                                                                           .boxInner :hover {
+                                                                               color: #EF4423 !important;
+                                                                               font-size: 18px;
+                                                                           }
+                                                                           
+                                                                           .boxInner .titleBox:hover {
+                                                                               color: #EF4423 !important;
+                                                                               font-size: 18px;
+                                                                           }
+                                                                           
+                                                                           body.no-touch .boxInner:hover .titleBox,
+                                                                           body.touch .boxInner.touchFocus .titleBox {
+                                                                               margin-bottom: 0;
+                                                                               color: #EF4423 !important;
+                                                                               font-size: 17px;
+                                                                           }
+                                                                           
+                                                                           @media only screen and (max-width: 480px) {
+                                                                               /* Smartphone view: 1 tile */
+                                                                               .box {
+                                                                                   width: 100%;
+                                                                                   padding-bottom: 100%;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           @media (max-width: 575px) {
+                                                                               .mobilemenu {
+                                                                                   display: block;
+                                                                               }
+                                                                               .desktopmenu {
+                                                                                   display: none;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           @media (min-width: 575px) {
+                                                                               .mobilemenu {
+                                                                                   display: none;
+                                                                                   position: relative;
+                                                                               }
+                                                                               .desktopmenu {
+                                                                                   display: block;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           @media only screen and (max-width: 650px) and (min-width: 481px) {
+                                                                               .box {
+                                                                                   width: 50%;
+                                                                                   padding-bottom: 50%;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           @media only screen and (max-width: 1050px) and (min-width: 651px) {
+                                                                               .box {
+                                                                                   width: 33.3%;
+                                                                                   padding-bottom: 33.3%;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           @media only screen and (max-width: 1290px) and (min-width: 1051px) {
+                                                                               .box {
+                                                                                   width: 25%;
+                                                                                   padding-bottom: 25%;
+                                                                               }
+                                                                           }
+                                                                           
+                                                                           .footerbar {
+                                                                               clear: both;
+                                                                               background: #EF4423;
+                                                                               color: White;
+                                                                               padding: 0;
+                                                                               height: 40px;
+                                                                               text-align: center;
+                                                                               vertical-align: middle;
+                                                                               line-height: normal;
+                                                                               margin: 0;
+                                                                               position: fixed;
+                                                                               bottom: 0px;
+                                                                               width: 100%;
+                                                                           }
+                                                                           
+                                                                           .navbar-inverse .navbar-toggle .icon-bar {
+                                                                               background-color: #EF4412;
+                                                                           }
+                                                                           
+                                                                           .navbar-toggle:hover {
+                                                                               background-color: #fff;
+                                                                           }
+                                                                           
+                                                                           .navbar-collapse {
+                                                                               border-top: 1px solid #C9C5C4 !important;
+                                                                           }
+                                                                           
+                                                                           .navbar-toggle {
+                                                                               background-color: #fff !important;
+                                                                               border: 1px solid #C9C5C4 !important;
+                                                                           }
+                                                                           
+                                                                           .navbar-toggle:hover {
+                                                                               background-color: #fff !important;
+                                                                           }
+                                                                           
+                                                                           .clientimg {
+                                                                               padding-top: 8px;
+                                                                               padding-bottom: 28px;
+                                                                               padding-left: 0px;
+                                                                               padding-right: 0px;
+                                                                               width: 100%;
+                                                                               max-width: 100%;
+                                                                               height: 100%;
+                                                                           }
+                                                                           
+                                                                           .navbar-default {
+                                                                               background-color: #ffffff;
+                                                                               border-color: #ffffff;
+                                                                               box-shadow: none;
+                                                                           }
+                                                                           
+                                                                           .lmenu {
+                                                                               padding-left: 100px;
+                                                                               color: #EF4423;
+                                                                           }
+                                                                           
+                                                                           #slider {
+                                                                               width: 100%;
+                                                                               overflow-x: hidden;
+                                                                               overflow-y: hidden;
+                                                                           }
+                                                                           
+                                                                           #slider .slides {
+                                                                               display: block;
+                                                                               width: 6000px;
+                                                                               height: 300px;
+                                                                               margin: 0;
+                                                                               padding: 0;
+                                                                           }
+                                                                           
+                                                                           #slider .slide {
+                                                                               float: left;
+                                                                               list-style-type: none;
+                                                                               padding-right: 21px;
+                                                                               padding-left: 20px;
+                                                                               /*width: 720px;
         height: 450px;*/
-                                                                            }
-                                                                            
-                                                                            .blacktext {
-                                                                                text-align: left;
-                                                                                float: left;
-                                                                                padding-left: 15px;
-                                                                            }
-                                                                            
-                                                                            .redtext {
-                                                                                text-align: left;
-                                                                                float: left;
-                                                                                color: #EF4423;
-                                                                            }
-                                                                            
-                                                                            a.control_prev,
-                                                                            a.control_next {
-                                                                                position: absolute;
-                                                                                z-index: 999;
-                                                                                display: block;
-                                                                                padding: 10px 15px;
-                                                                                width: auto;
-                                                                                height: auto;
-                                                                                background: #EF4423;
-                                                                                color: #fff;
-                                                                                text-decoration: none;
-                                                                                font-weight: 600;
-                                                                                font-size: 18px;
-                                                                                opacity: 0.8;
-                                                                                cursor: pointer;
-                                                                                border-radius: 15px;
-                                                                            }
-                                                                            
-                                                                            .workheading {
-                                                                                color: #EF4423;
-                                                                                font-size: 24px;
-                                                                                top: 0px;
-                                                                            }
-                                                                            
-                                                                            a.control_prev {
-                                                                                top: 57%;
-                                                                            }
-                                                                            
-                                                                            a.control_next {
-                                                                                top: 50%;
-                                                                            }
-                                                                            
-                                                                            a.control_prev:hover,
-                                                                            a.control_next:hover {
-                                                                                opacity: 1;
-                                                                                /*-webkit-transition: all 0.2s ease;*/
-                                                                            }
-                                                                            
-                                                                            a.control_prev {
-                                                                                right: 0;
-                                                                                border-radius: 0 2px 2px 0;
-                                                                            }
-                                                                            
-                                                                            a.control_next {
-                                                                                right: 0;
-                                                                                border-radius: 2px 0 0 2px;
-                                                                            }
-                                                                            
-                                                                            .headerbar {
-                                                                                clear: both;
-                                                                                color: White;
-                                                                                padding: 0;
-                                                                                text-align: center;
-                                                                                vertical-align: middle;
-                                                                                line-height: normal;
-                                                                                margin: 0;
-                                                                                position: fixed;
-                                                                                width: 100%;
-                                                                                top: 8%;
-                                                                            }
-                                                                            
-                                                                            .mover:hover {
-                                                                                color: #fff;
-                                                                            }
-                                                                            
-                                                                            .footerbar {
-                                                                                clear: both;
-                                                                                background: #EF4423;
-                                                                                color: White;
-                                                                                padding: 0;
-                                                                                height: 40px;
-                                                                                text-align: center;
-                                                                                vertical-align: middle;
-                                                                                line-height: normal;
-                                                                                margin: 0;
-                                                                                position: fixed;
-                                                                                bottom: 0px;
-                                                                                width: 100%;
-                                                                            }
-                                                                            
-                                                                            .footerbox {
-                                                                                color: #fff;
-                                                                                font-size: 22px;
-                                                                                padding-top: 7px;
-                                                                            }
-                                                                            
-                                                                            .footer {
-                                                                                color: #6F6F6F;
-                                                                                padding-left: 30px;
-                                                                                margin-top: 20px;
-                                                                                font-family: Akkurat Regular;
-                                                                            }
-                                                                            
-                                                                            .clienttext {
-                                                                                font-size: 22px;
-                                                                                width: 85%;
-                                                                                padding: 0px 30px 10px 0px;
-                                                                            }
+                                                                           }
+                                                                           
+                                                                           .blacktext {
+                                                                               text-align: left;
+                                                                               float: left;
+                                                                               padding-left: 15px;
+                                                                           }
+                                                                           
+                                                                           .redtext {
+                                                                               text-align: left;
+                                                                               float: left;
+                                                                               color: #EF4423;
+                                                                           }
+                                                                           
+                                                                           a.control_prev,
+                                                                           a.control_next {
+                                                                               position: absolute;
+                                                                               z-index: 999;
+                                                                               display: block;
+                                                                               padding: 10px 15px;
+                                                                               width: auto;
+                                                                               height: auto;
+                                                                               background: #EF4423;
+                                                                               color: #fff;
+                                                                               text-decoration: none;
+                                                                               font-weight: 600;
+                                                                               font-size: 18px;
+                                                                               opacity: 0.8;
+                                                                               cursor: pointer;
+                                                                               border-radius: 15px;
+                                                                           }
+                                                                           
+                                                                           .workheading {
+                                                                               color: #EF4423;
+                                                                               font-size: 24px;
+                                                                               top: 0px;
+                                                                           }
+                                                                           
+                                                                           a.control_prev {
+                                                                               top: 57%;
+                                                                           }
+                                                                           
+                                                                           a.control_next {
+                                                                               top: 50%;
+                                                                           }
+                                                                           
+                                                                           a.control_prev:hover,
+                                                                           a.control_next:hover {
+                                                                               opacity: 1;
+                                                                               /*-webkit-transition: all 0.2s ease;*/
+                                                                           }
+                                                                           
+                                                                           a.control_prev {
+                                                                               right: 0;
+                                                                               border-radius: 0 2px 2px 0;
+                                                                           }
+                                                                           
+                                                                           a.control_next {
+                                                                               right: 0;
+                                                                               border-radius: 2px 0 0 2px;
+                                                                           }
+                                                                           
+                                                                           .headerbar {
+                                                                               clear: both;
+                                                                               color: White;
+                                                                               padding: 0;
+                                                                               text-align: center;
+                                                                               vertical-align: middle;
+                                                                               line-height: normal;
+                                                                               margin: 0;
+                                                                               position: fixed;
+                                                                               width: 100%;
+                                                                               top: 8%;
+                                                                           }
+                                                                           
+                                                                           .mover:hover {
+                                                                               color: #fff;
+                                                                           }
+                                                                           
+                                                                           .footerbox {
+                                                                               color: #fff;
+                                                                               font-size: 22px;
+                                                                           }
+                                                                           
+                                                                           .footer {
+                                                                               color: #6F6F6F;
+                                                                               padding-left: 30px;
+                                                                               margin-top: 20px;
+                                                                               font-family: Akkurat Regular;
+                                                                           }
+                                                                           
+                                                                           .clienttext {
+                                                                               font-size: 22px;
+                                                                               width: 80%;
+                                                                               padding: 0px 30px 10px 0px;
+                                                                           }

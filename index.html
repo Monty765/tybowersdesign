@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -16,149 +16,9 @@
     <link rel="stylesheet" href="../css/tyb.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <style type="text/css">
-        @font-face {
-            src: url("Akkurat Regular.otf") format("opentype");
-            font-family: Akkurat Regular;
-        }
-        
         body {
             padding-top: 105px;
-        }
-        
-        @media only screen and (max-width: 1200px) {
-            body {
-                padding-top: 205px;
-            }
-        }
-        
-        .navbar-fixed-top {
-            border: 0px;
-        }
-        
-        .navbar-default {
-            background-color: #ffffff;
-            border-color: #ffffff;
-            border: 0px;
-        }
-        
-        .lmenu {
-            padding-left: 100px;
-            color: #EF4423;
-        }
-        
-        .content {
-            display: none;
-        }
-        
-        .container-fluid {
-            /*height:;*/
-        }
-        
-        .wrap {
-            overflow: hidden;
-            margin: 10px;
-        }
-        
-        .box {
-            float: left;
-            position: relative;
-            width: 25%;
-            padding-bottom: 20%;
-            margin-bottom: 18px;
-        }
-        
-        .boxInner {
-            position: absolute;
-            left: 10px;
-            right: 10px;
-            top: 10px;
-            bottom: 10px;
-            overflow: hidden;
-        }
-        
-        .boxInner img {
-            width: 100%;
-        }
-        
-        .boxInner .titleBox {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            /*margin-bottom: -50px;*/
-            /*background: #000;*/
-            background: #C9C5C4;
-            color: #000;
-            padding: 10px;
-            text-align: center;
-            -webkit-transition: all 0.3s ease-out;
-            -moz-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-        }
-        
-        .boxInner :hover {
-            color: #EF4423 !important;
-            font-size: 18px;
-        }
-        
-        .boxInner .titleBox:hover {
-            color: #EF4423 !important;
-            font-size: 18px;
-        }
-        
-        body.no-touch .boxInner:hover .titleBox,
-        body.touch .boxInner.touchFocus .titleBox {
-            margin-bottom: 0;
-            color: #EF4423 !important;
-            font-size: 17px;
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /* Smartphone view: 1 tile */
-            .box {
-                width: 100%;
-                padding-bottom: 100%;
-            }
-        }
-        
-        @media only screen and (max-width: 650px) and (min-width: 481px) {
-            /* Tablet view: 2 tiles */
-            .box {
-                width: 50%;
-                padding-bottom: 50%;
-            }
-        }
-        
-        @media only screen and (max-width: 1050px) and (min-width: 651px) {
-            /* Small desktop / ipad view: 3 tiles */
-            .box {
-                width: 33.3%;
-                padding-bottom: 33.3%;
-            }
-        }
-        
-        @media only screen and (max-width: 1290px) and (min-width: 1051px) {
-            /* Medium desktop: 4 tiles */
-            .box {
-                width: 25%;
-                padding-bottom: 25%;
-            }
-        }
-        
-        .footerbar {
-            clear: both;
-            background: #EF4423;
-            color: White;
-            padding: 0;
-            height: 40px;
-            text-align: center;
-            vertical-align: middle;
-            line-height: normal;
-            margin: 0;
-            position: fixed;
-            bottom: 0px;
-            width: 100%;
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -171,34 +31,56 @@
     <div class="container-fluid">
         <div class="navbar navbar-default navbar-fixed-top" style="box-shadow:none;">
             <div class="container-fluid" style="background-color:#fff;">
-                <div class="col-lg-8 col-md-6">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8 desktopmenu">
+                        <div class="" style="min-height:85px;margin-top:8px;">
+                            <a href="../">
+                                <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="img/tybb.png" id="mainLogo" style="height:85px;" /><br/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xm-4 desktopmenu"><br/>
+                        <div class="lmenu" style="float:right;padding-right:50%">
+                            <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
+                                <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
+                                <li style="cursor:pointer;"><a href="../about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
+                                <li style="cursor:pointer;"><a href="../contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                    <div style="min-height:85px;margin-top:8px;">
+                <!--end of flot -->
+            </div>
+            <div class="navbar navbar-inverse navbar-fixed-top mobilemenu">
+                <div class="container">
+                    <div class="navbar-header" style="background-color:#fff !important;">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         <a href="../">
-                            <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="img/tybb.png" id="mainLogo" style="height:85px;" /><br/>
+                            <img src="img/smalllogoo.png" id="smallLogo" style="height:85px;">
                         </a>
                     </div>
-
-                </div>
-                <div class="col-lg-4 col-md-8"><br/>
-                    <div class="lmenu">
-                        <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
-                            <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
-                            <li style="cursor:pointer;"><a href="../about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
-                            <li style="cursor:pointer;"><a href="../contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
+                    <div class="collapse navbar-collapse" style="background-color:#fff;">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/" style="color:#EF4423;">Work</a></li>
+                            <li><a href="../about.html" style="color:#EF4423;">About</a></li>
+                            <li><a href="../contact.html" style="color:#EF4423;">Contact</a></li>
                         </ul>
                     </div>
-                    <!--end of flot -->
-                </div>
-                <div class="col-lg-12 col-md-12 ">
-                    <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:49.5%;padding-bottom:5px;margin-top:-13px;"></span></a>
+                    <!--/.nav-collapse -->
                 </div>
             </div>
-
+        </div>
+        <div class="col-lg-12 col-md-12" style="background-color:#FFF;">
+            <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;"></span></a>
         </div>
     </div>
+    </div>
     <!-- </div> -->
-
 
     <div class="wrap">
 
@@ -282,7 +164,7 @@
     <!-- /container -->
 
     </center>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script type="text/javascript">

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -16,68 +16,153 @@
     <link rel="stylesheet" href="../css/tyb.css">
     <link rel="shortcut icon" type="png" href="../favicon.png" />
     <style type="text/css">
-
+        @media (min-width: 1200px) {
+            .respo {
+                width: 100% !important;
+                padding-top: 15px;
+            }
+        }
+        
+        @media (min-width: 992px) and (max-width: 1199px) {}
+        
+        .clienttext {
+            width: 85%;
+            font-size: 20px;
+            padding: 0px 0px 0px 0px;
+        }
+        
+        .respo {
+            width: 600px;
+            align-content: center;
+            padding-top: 15px;
+        }
+        
+        @media (min-width: 576px) and (max-width: 991px) {
+            #smallLogo {
+                height: 65px !important;
+            }
+            #mainlogo {
+                height: 65px !important;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .clienttext {
+                width: 100%;
+                font-size: 16px;
+                margin-top: 60px;
+                padding: 0px 0px 0px 0px;
+            }
+            .slide {
+                width: 100%;
+            }
+            .respo {
+                width: 335px;
+                align-content: center;
+                padding-bottom: 10px;
+            }
+            .control_next {
+                display: none !important;
+            }
+            .control_prev {
+                display: none !important;
+            }
+        }
+        
+        @media (min-width: 575px) {
+            .mobilemenu {
+                display: none;
+                position: relative;
+            }
+            .desktopmenu {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body style="font-family:Akkurat Regular;" onscroll="myFunction()">
+    <div class="container-fluid" style="background-color:#fff;">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8 desktopmenu">
+                <div class="" style="min-height:85px;margin-top:8px;">
+                    <a href="../">
+                        <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="../img/tybb.png" id="mainLogo" style="height:85px;" /><br/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xm-4 desktopmenu"><br/>
+                <div class="lmenu" style="float:right;padding-right:50%">
+                    <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
+                        <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
+                        <li style="cursor:pointer;"><a href="../about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
+                        <li style="cursor:pointer;"><a href="../contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--end of flot -->
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top mobilemenu">
+        <div class="container">
+            <div class="navbar-header" style="background-color:#fff !important;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                <a href="../">
+                    <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" style="background-color:#fff;">
+                <ul class="nav navbar-nav">
+                    <li><a href="/" style="color:#EF4423;">Work</a></li>
+                    <li><a href="../about.html" style="color:#EF4423;">About</a></li>
+                    <li><a href="../contact.html" style="color:#EF4423;">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
     <div class="container-fluid">
-        <div class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;border: 0px solid transparent;border-color:#fff;">
-            <div class="container-fluid" style="background-color:#fff;">
-                <div class="col-lg-8 col-md-6">
+        <div class="container-fluid" style="background-color:#fff;">
 
-                    <div style="min-height:85px;margin-top:8px;">
-                        <a href="../">
-                            <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;"><img src="../img/tybb.png" id="mainLogo" style="height:85px;" /><br/>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-8"><br/>
-                    <div class="lmenu">
-                        <ul style="list-style:none; border-left:1px solid #EF4423;width:30px;">
-                            <li style="cursor:pointer;"><a href="/" style="color:#EF4423; text-decoration:none;">Work</a></li>
-                            <li style="cursor:pointer;"><a href="../about.html" style="color:#EF4423; text-decoration:none;">About</a></li>
-                            <li style="cursor:pointer;"><a href="../contact.html" style="color:#EF4423; text-decoration:none;">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!--end of flot -->
-                </div>
-                <div class="col-lg-12 col-md-12 ">
-                    <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-bottom:5px;"></span></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-12">
-            <br/>
-            <div style="width:300px;">
-                <hr style="height:1px;border:none;color:#6F6F6F;background-color:#6F6F6F;" />
-            </div>
-            <div class="clienttext"> Buscemi is a luxury sneaker company based in Hollywood, CA. They asked me to establish visual standards for their epic brand across various media platforms to include everything from outdoor poster campaigns to digital marketing programs.
+            <div class="col-lg-12 col-md-12 ">
+                <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-top: 11px;"></span></a>
             </div>
         </div>
-        <a href="#" class="control_next"><span class="glyphicon glyphicon-arrow-left"></span></a>
-        <a href="#" class="control_prev"><span class="glyphicon glyphicon-arrow-right"></span></a>
 
-        <div id="slider">
-            <ul class="slides">
-                <li class="slide">
-                    <!-- <span class="blacktext">TBD + FLI</span><span class="redtext"> | LOGO DESIGN & BRAND STRATEGY</span></br> -->
-                    <img src="../img/BUSCEMI/buscemi_B4.png" /></li>
-                <li class="slide">
-                    <!-- <span class="blacktext">TBD + FLI </span><span class="redtext"> | PRODUCT MERCHANDISING & PACAKAGE DESIGN</span></br> -->
-                    <img src="../img/BUSCEMI/buscemi_B3.png" /></li>
-                <li class="slide">
-                    <!-- <span class="blacktext">TBD + FLI </span><span class="redtext"> | PRODUCT MERCHANDISING & PACAKAGE DESIGN</span></br> -->
-                    <img src="../img/BUSCEMI/buscemi_B3-revised.png" /></li>
-            </ul>
+    </div>
+
+    <div class="col-lg-12">
+        <div style="width:300px;">
+            <hr style="height:1px;border:none;color:#6F6F6F;background-color:#6F6F6F;" />
         </div>
+        <div class="clienttext"> Buscemi is a luxury sneaker company based in Hollywood, CA. They asked me to establish visual standards for their epic brand across various media platforms to include everything from outdoor poster campaigns to digital marketing programs.
+        </div>
+    </div>
+    <a href="#" class="control_next"><span class="glyphicon glyphicon-arrow-left"></span></a>
+    <a href="#" class="control_prev"><span class="glyphicon glyphicon-arrow-right"></span></a>
+
+    <div id="slider">
+        <ul class="slides">
+            <li class="slide">
+                <!-- <span class="blacktext">TBD + FLI</span><span class="redtext"> | LOGO DESIGN & BRAND STRATEGY</span></br> -->
+                <img src="../img/BUSCEMI/buscemi_B4.png" class="respo" /></li>
+            <li class="slide">
+                <!-- <span class="blacktext">TBD + FLI </span><span class="redtext"> | PRODUCT MERCHANDISING & PACAKAGE DESIGN</span></br> -->
+                <img src="../img/BUSCEMI/buscemi_B3.png" class="respo" /></li>
+            <li class="slide">
+                <!-- <span class="blacktext">TBD + FLI </span><span class="redtext"> | PRODUCT MERCHANDISING & PACAKAGE DESIGN</span></br> -->
+                <img src="../img/BUSCEMI/buscemi_B3-revised.png" class="respo" /></li>
+        </ul>
+    </div>
 
 
     </div>
-    </div>
+
     <!-- Site footer -->
     <footer class="footer" style="font-family:Akkurat Regular;">
         &copy; 2017 T/B/D Ty Bowers Design.<br/>
