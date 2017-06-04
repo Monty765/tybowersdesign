@@ -1,5 +1,3 @@
-<html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +48,6 @@
             .clienttext {
                 width: 100%;
                 font-size: 16px;
-                margin-top: 60px;
                 padding: 0px 0px 0px 0px;
             }
             .slide {
@@ -70,6 +67,23 @@
             .ctextbar {
                 margin-left: 0px !important;
             }
+            .blockmenu {
+                margin-top: 70px;
+            }
+            .footerbox {
+                font-size: 19px;
+            }
+            .footer {
+                margin-top: 0px;
+                margin-bottom: 43px;
+            }
+            #mainLogo {
+                margin-right: 0px;
+                padding-left: 0px;
+            }
+            .mobilehorizontalbar {
+                width: 100% !important;
+            }
         }
         
         @media (min-width: 575px) {
@@ -84,6 +98,10 @@
         
         .ctextbar {
             margin-left: 30px;
+        }
+        
+        .navbar-nav>li>a {
+            text-shadow: none !important;
         }
     </style>
 </head>
@@ -120,7 +138,12 @@
                                 <span class="icon-bar"></span>
                             </button>
                 <a href="../">
-                    <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;">
+                    <div class="" style="min-height:85px;">
+                        <a href="../">
+                            <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;" />
+                            <img src="../img/tybb.png" id="mainLogo" style="height:45px;" /><br/>
+                        </a>
+                    </div>
                 </a>
             </div>
             <div class="collapse navbar-collapse" style="background-color:#fff;">
@@ -133,9 +156,8 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid blockmenu">
         <div class="container-fluid" style="background-color:#fff;">
-
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-top: 11px;"></span></a>
             </div>
@@ -145,7 +167,7 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ctextbar">
-            <div style="width:300px;">
+            <div style="width:300px;" class="mobilehorizontalbar">
                 <hr style="height:1px;border:none;color:#6F6F6F;background-color:#6F6F6F;" />
             </div>
             <div class="clienttext">Buscemi is a luxury sneaker company based in Hollywood, CA. They asked me to establish visual standards for their epic brand across various media platforms to include everything from outdoor poster campaigns to digital marketing programs.
@@ -173,9 +195,9 @@
     </div>
 
     <!-- Site footer -->
-    <footer class="footer" style="font-family:Akkurat Regular;">
+    <div class="footer" style="font-family:Akkurat Regular;">
         &copy; 2017 T/B/D Ty Bowers Design.<br/>
-    </footer>
+    </div>
     </div>
 
     <div class="col-sm-12 footerbar">

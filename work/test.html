@@ -1,5 +1,3 @@
-<html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +48,6 @@
             .clienttext {
                 width: 100%;
                 font-size: 16px;
-                margin-top: 60px;
                 padding: 0px 0px 0px 0px;
             }
             .slide {
@@ -68,7 +65,24 @@
                 display: none !important;
             }
             .ctextbar {
-                margin-left: 0px;
+                margin-left: 0px !important;
+            }
+            .blockmenu {
+                margin-top: 70px;
+            }
+            .footerbox {
+                font-size: 19px;
+            }
+            .footer {
+                margin-top: 0px;
+                margin-bottom: 43px;
+            }
+            #mainLogo {
+                margin-right: 0px;
+                padding-left: 0px;
+            }
+            .mobilehorizontalbar {
+                width: 100% !important;
             }
         }
         
@@ -84,6 +98,10 @@
         
         .ctextbar {
             margin-left: 30px;
+        }
+        
+        .navbar-nav>li>a {
+            text-shadow: none !important;
         }
     </style>
 </head>
@@ -120,7 +138,12 @@
                                 <span class="icon-bar"></span>
                             </button>
                 <a href="../">
-                    <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;">
+                    <div class="" style="min-height:85px;">
+                        <a href="../">
+                            <img src="../img/smalllogoo.png" id="smallLogo" style="height:85px;" />
+                            <img src="../img/tybb.png" id="mainLogo" style="height:45px;" /><br/>
+                        </a>
+                    </div>
                 </a>
             </div>
             <div class="collapse navbar-collapse" style="background-color:#fff;">
@@ -133,9 +156,8 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid blockmenu">
         <div class="container-fluid" style="background-color:#fff;">
-
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="../"><span class="glyphicon glyphicon-th footerbox" style="color:#EF4423; left:50%;padding-top: 11px;"></span></a>
             </div>
@@ -144,24 +166,42 @@
     </div>
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div style="width:80%;margin:0 auto;">
-            <p>
-                <h2 class="workheading">ABOUT</h2><br/>
-                <p class="lead" style="font-size:24px;font-family:Akkurat Regular;color:#6E6E6E;">
-                    Ty Bowers Design is a multi-disciplined, independent design and branding concern located in <br/> Los Angeles. TBD delivers creative and innovative solutions to communication projects across brand <br/> identity, print, packaging,
-                    environmental, consumer product and digital design platforms. </p>
-                <p class="lead" style="font-size:23px;font-family:Akkurat Regular;color:#6E6E6E;">For over 20 years, Ty Bowers has reinvigorated well known brands and established new ones.<br/> Working as a virtual extension of his client's organizations, he collaborates to create the strategies,<br/> products and environments that
-                    surround brands and give them life. <br/></p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ctextbar">
+            <div style="width:300px;" class="mobilehorizontalbar">
+                <hr style="height:1px;border:none;color:#6F6F6F;background-color:#6F6F6F;" />
+            </div>
+            <div class="clienttext">V&S are a pre-mixed cocktail maker who, because of their celebrity ties, prefer to remain anonymous at this stage in their company’s history. They asked me to design packaging that would position their line of legendary cocktails to be unique
+                and masculine.
+            </div>
         </div>
+    </div>
+    <a href="#" class="control_next"><span class="glyphicon glyphicon-arrow-left"></span></a>
+    <a href="#" class="control_prev"><span class="glyphicon glyphicon-arrow-right"></span></a>
+
+    <div id="slider">
+        <ul class="slides">
+            <li class="slide">
+                <img src="../img/Valor & Stout/valor-&-stout-logo_B1.png" class="respo" />
+            </li>
+            <li class="slide">
+                <img src="../img/Valor & Stout/VALOR-&-STOUT_B2.png" class="respo" />
+            </li>
+            <li class="slide">
+                <img src="../img/Valor & Stout/valor-&-stout-logo_B3.png" width="900px" height="630px" class="respo" />
+            </li>
+            <li class="slide">
+                <img src="../img/Valor & Stout/VALOR-&-STOUT_B4.png" width="900px" height="630px" class="respo" />
+            </li>
+        </ul>
     </div>
 
 
     </div>
 
     <!-- Site footer -->
-    <footer class="footer" style="font-family:Akkurat Regular;margin-top:40%">
+    <div class="footer" style="font-family:Akkurat Regular;">
         &copy; 2017 T/B/D Ty Bowers Design.<br/>
-    </footer>
+    </div>
     </div>
 
     <div class="col-sm-12 footerbar">
